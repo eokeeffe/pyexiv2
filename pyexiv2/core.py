@@ -21,6 +21,9 @@ class Image:
     def __exit__(self, *args):
         self.close()
 
+    def version(self):
+        return "2.1.0"
+
     def close(self):
         """ Free the memory for storing image data. """
         api.close_image(self.img)
