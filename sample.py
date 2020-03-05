@@ -1,6 +1,6 @@
 from pyexiv2 import Image
 
-img = Image(r'.\pyexiv2\tests\1.jpg')
+img = Image('1.jpg')
 
 img.read_exif()
 img.read_iptc()
